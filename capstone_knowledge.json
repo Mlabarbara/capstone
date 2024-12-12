@@ -1,256 +1,167 @@
 {
-  "entities": [
+  "document_sections": [
     {
-      "type": "entity",
-      "name": "Process_8_Document",
-      "entityType": "Document",
-      "observations": [
-        "Contains both PDF and DOCX versions",
-        "Is currently in rough draft stage"
-      ]
+      "id": 1,
+      "section_name": "Conclusion",
+      "current_state": "Final revision completed",
+      "improvement_suggestions": "Enhanced with healthcare-specific metrics, detailed implementation recommendations, and future research directions",
+      "status": "Completed"
     },
     {
-      "type": "entity",
-      "name": "Document_Structure",
-      "entityType": "Component",
-      "observations": [
-        "Will analyze organization and flow",
-        "Will identify sections needing improvement"
-      ]
+      "id": 2,
+      "section_name": "Literature_Review",
+      "current_state": "Final revision completed",
+      "improvement_suggestions": "Enhanced with healthcare context, emerging technologies, and stronger research gap analysis",
+      "status": "Completed"
     },
     {
-      "type": "entity",
-      "name": "Content_Analysis",
-      "entityType": "Analysis",
-      "observations": [
-        "Will evaluate accuracy and completeness",
-        "Will assess writing quality"
-      ]
+      "id": 3,
+      "section_name": "Methods",
+      "current_state": "Final revision completed",
+      "improvement_suggestions": "Added healthcare-specific testing scenarios and updated security assessment methodology",
+      "status": "Completed"
     },
     {
-      "type": "entity",
-      "name": "Structure_Analysis",
-      "entityType": "Analysis_Component",
-      "observations": [
-        "Organization and flow of ideas",
-        "Section transitions",
-        "Logical progression",
-        "Header hierarchy"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Content_Quality",
-      "entityType": "Analysis_Component",
-      "observations": [
-        "Accuracy of information",
-        "Depth of analysis",
-        "Supporting evidence",
-        "Citations and references"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Writing_Style",
-      "entityType": "Analysis_Component",
-      "observations": [
-        "Clarity and conciseness",
-        "Academic tone",
-        "Consistency in voice",
-        "Technical terminology usage"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Format_Mechanics",
-      "entityType": "Analysis_Component",
-      "observations": [
-        "Grammar and punctuation",
-        "Style guide compliance",
-        "Visual presentation",
-        "Document formatting"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Revision_Workflow",
-      "entityType": "Process",
-      "observations": [
-        "Phase 1: Initial content and structure assessment",
-        "Phase 2: Deep content analysis and enhancement",
-        "Phase 3: Style and clarity improvement",
-        "Phase 4: Format and mechanics refinement",
-        "Phase 5: Final review and polish"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Introduction_Improvements",
-      "entityType": "Revision_Needs",
-      "observations": [
-        "Need healthcare data breach statistics for context",
-        "Technical definitions should be more focused",
-        "End-to-end encryption explanation needs clarification",
-        "Better transition to literature review needed",
-        "Consider adding brief methodology preview"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Introduction_Improvements_Made",
-      "entityType": "Revision_Updates",
-      "observations": [
-        "Added specific healthcare breach statistics and financial impact data",
-        "Restructured technical definitions to flow more naturally",
-        "Strengthened connection to HIPAA compliance requirements",
-        "Added clear transition to upcoming sections",
-        "Integrated real-world context with academic focus"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Literature_Review_Analysis",
-      "entityType": "Document_Section",
-      "observations": [
-        "Requires update with 2024 sources",
-        "Needs stronger connection to introduction themes",
-        "Focus on emerging technologies required"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Literature_Review_Changes",
-      "entityType": "Revision_Track",
-      "observations": [
-        "Added healthcare-specific context to each encryption method",
-        "Connected to 2024 breach statistics",
-        "Enhanced hybrid encryption discussion",
-        "Added emerging technologies section",
-        "Strengthened research gap analysis"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Document_Flow_Analysis",
-      "entityType": "Content_Analysis",
-      "observations": [
-        "Introduction and Literature Review thematic alignment",
-        "Consistent treatment of encryption methods",
-        "Coherent progression of concepts",
-        "Connected statistics and examples"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Methods_Section_Final",
-      "entityType": "Document_Section",
-      "observations": [
-        "Enhanced healthcare-specific testing scenarios added",
-        "Updated technical specifications to 2024 standards",
-        "Expanded security assessment methodology",
-        "Added detailed performance metrics for healthcare context",
-        "Integrated emerging technology considerations",
-        "Maintained complete technical details from original"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Results_Section_Final",
-      "entityType": "document_section",
-      "observations": [
-        "Complete revision of Results section with enhanced healthcare focus",
-        "Updated performance metrics with clinical context",
-        "Added HIPAA compliance considerations",
-        "Integrated with Methods_Section_Final structure",
-        "Located at sections/results_revised.txt"
-      ]
-    },
-    {
-      "type": "entity",
-      "name": "Conclusion_Section_Final",
-      "entityType": "document_section",
-      "observations": [
-        "Synthesizes findings with enhanced healthcare focus",
-        "Addresses HIPAA compliance implications",
-        "Provides concrete implementation recommendations",
-        "Discusses performance-security tradeoffs",
-        "Outlines future research directions",
-        "Maintains consistency with Results_Section_Final",
-        "Added specific healthcare performance metrics",
-        "Included detailed infrastructure requirements",
-        "Provided implementation strategy",
-        "Added healthcare-specific future research directions",
-        "Enhanced HIPAA compliance discussion",
-        "Integrated emergency access protocols"
-      ]
+      "id": 4,
+      "section_name": "Results",
+      "current_state": "Final revision completed",
+      "improvement_suggestions": "Updated with clinical context and HIPAA compliance considerations",
+      "status": "Completed"
     }
   ],
-  "relations": [
+  "section_analysis": [
     {
-      "type": "relation",
-      "from": "Process_8_Document",
-      "to": "Document_Structure",
-      "relationType": "contains"
+      "id": 1,
+      "section_name": "Introduction",
+      "strengths": "Clear research focus; Well-defined research question; Strong proposition; Good technical background",
+      "weaknesses": "Technical definitions could be more concise; End-to-end encryption mention needs clarification; Some repetition in concepts",
+      "improvement_suggestions": "Restructure technical definitions for better flow; Add statistics about healthcare data breaches; Clarify end-to-end encryption vs hybrid approach; Add transition to literature review",
+      "status": "In Progress"
     },
     {
-      "type": "relation",
-      "from": "Process_8_Document",
-      "to": "Content_Analysis",
-      "relationType": "requires"
+      "id": 2,
+      "section_name": "Introduction_Final",
+      "strengths": "Updated statistics for 2024; Added specific healthcare use cases; Strong connection to methodology; Clear research gap identification; Enhanced technical context",
+      "weaknesses": "May need to strengthen quantum computing implications; Could expand on homomorphic encryption preview",
+      "improvement_suggestions": "Consider adding brief mention of limitations in introduction; Maybe include healthcare compliance standards beyond HIPAA",
+      "status": "Completed - Ready for Review"
     },
     {
-      "type": "relation",
-      "from": "Literature_Review_Changes",
-      "to": "Introduction_Improvements",
-      "relationType": "builds_upon"
+      "id": 3,
+      "section_name": "Literature_Review_Final",
+      "strengths": "Strong healthcare context; Updated sources; Clear research gap; Enhanced hybrid encryption discussion",
+      "weaknesses": "Could expand quantum computing section",
+      "improvement_suggestions": "Consider adding more healthcare-specific encryption standards",
+      "status": "Completed"
     },
     {
-      "type": "relation",
-      "from": "Document_Flow_Analysis",
-      "to": "Document_Structure",
-      "relationType": "updates"
+      "id": 4,
+      "section_name": "Methods_Final",
+      "strengths": "Detailed testing procedures; Clear healthcare focus; Strong technical specifications",
+      "weaknesses": "Some control measures could be more explicit",
+      "improvement_suggestions": "Add more detail about control measures",
+      "status": "Completed"
     },
     {
-      "type": "relation",
-      "from": "Methods_Section_Final",
-      "to": "Literature_Review_Changes",
-      "relationType": "builds_upon"
+      "id": 5,
+      "section_name": "Results_Final",
+      "strengths": "Clear metrics; Strong healthcare context; Good HIPAA integration",
+      "weaknesses": "Could expand multi-provider scenarios",
+      "improvement_suggestions": "Consider adding cross-provider testing results",
+      "status": "Completed"
+    }
+  ],
+  "citations": [
+    {
+      "id": 1,
+      "citation_key": "IBM_2024",
+      "authors": "IBM Security & Ponemon Institute",
+      "year": 2024,
+      "title": "Cost of a Data Breach Report 2024",
+      "source": "IBM Security",
+      "url": "https://www.ibm.com/reports/data-breach",
+      "stats_used": "Healthcare breach cost: $9.8 million per incident",
+      "section_used": "Introduction"
     },
     {
-      "type": "relation",
-      "from": "Methods_Section_Final",
-      "to": "Document_Flow_Analysis",
-      "relationType": "enhances"
+      "id": 2,
+      "citation_key": "HHS_2024",
+      "authors": "U.S. Department of Health & Human Services",
+      "year": 2024,
+      "title": "Healthcare Data Breach Statistics",
+      "source": "HHS OCR Portal",
+      "url": "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf",
+      "stats_used": "172 million individuals affected in 2024",
+      "section_used": "Introduction"
     },
     {
-      "type": "relation",
-      "from": "Results_Section_Final",
-      "to": "Methods_Section_Final",
-      "relationType": "builds_upon"
+      "id": 3,
+      "citation_key": "STAT_2024",
+      "authors": "STAT News",
+      "year": 2024,
+      "title": "Change Healthcare cyberattack drives 2024 into another record year for health data breaches",
+      "source": "STAT News",
+      "url": "https://www.statnews.com/2024/12/05/change-healthcare-cyberattack-2024-record-year-us-data-breaches/",
+      "stats_used": "Over 50% of US population affected by breaches in 2024",
+      "section_used": "Introduction"
     },
     {
-      "type": "relation",
-      "from": "Results_Section_Final",
-      "to": "Document_Flow_Analysis",
-      "relationType": "enhances"
+      "id": 4,
+      "citation_key": "Wang_2024",
+      "authors": "Wang, N., Zhou, W., Wang, J., Guo, Y., Fu, J., & Liu, J.",
+      "year": 2024,
+      "title": "Secure and efficient similarity retrieval in cloud computing based on homomorphic encryption",
+      "source": "IEEE Transactions on Information Forensics and Security",
+      "url": "https://doi.org/10.1109/TIFS.2024.3350909",
+      "stats_used": "Encryption performance metrics",
+      "section_used": "Literature Review"
     },
     {
-      "type": "relation",
-      "from": "Results_Section_Final",
-      "to": "Conclusion_Section_Final",
-      "relationType": "informs"
+      "id": 5,
+      "citation_key": "Salami_2023",
+      "authors": "Salami, Y., Khajehvand, V., & Zeinali, E.",
+      "year": 2023,
+      "title": "Cryptographic algorithms: A review of the literature, weaknesses and open challenges",
+      "source": "Journal of Computer & Robotics",
+      "stats_used": "Encryption algorithm analysis",
+      "section_used": "Literature Review"
     },
     {
-      "type": "relation",
-      "from": "Methods_Section_Final",
-      "to": "Conclusion_Section_Final",
-      "relationType": "supports"
+      "id": 6,
+      "citation_key": "Kiesel_2023",
+      "authors": "Kiesel, R., Lakatsch, M., Mann, A., Lossie, K., Sohnius, F., & Schmitt, R. H.",
+      "year": 2023,
+      "title": "Potential of homomorphic encryption for cloud computing use cases in manufacturing",
+      "source": "Journal of Cybersecurity and Privacy",
+      "url": "https://doi.org/10.3390/jcp3010004",
+      "stats_used": "Homomorphic encryption applications",
+      "section_used": "Literature Review"
+    }
+  ],
+  "revision_tasks": [
+    {
+      "id": 1,
+      "task_description": "Review and optimize document structure for logical flow",
+      "status": "Pending",
+      "notes": "Focus on section transitions and idea progression"
     },
     {
-      "type": "relation",
-      "from": "Conclusion_Section_Final",
-      "to": "Document_Flow_Analysis",
-      "relationType": "enhances"
+      "id": 2,
+      "task_description": "Enhance content depth and evidence support",
+      "status": "Pending",
+      "notes": "Ensure all claims are properly supported with citations"
+    },
+    {
+      "id": 3,
+      "task_description": "Refine writing style for consistency and clarity",
+      "status": "Pending",
+      "notes": "Maintain professional academic tone throughout"
+    },
+    {
+      "id": 4,
+      "task_description": "Standardize formatting and citation style",
+      "status": "Pending",
+      "notes": "Apply consistent formatting rules across document"
     }
   ]
 }
