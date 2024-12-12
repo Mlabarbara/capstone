@@ -1,0 +1,65 @@
+Methods
+Research Environment and Setup
+•	Local Machine: 2021 MacBook Pro with 32 GB RAM, 1 TB SSD, M1 chip.
+•	Remote Server: It is accessed via Twingate, a secure ZTNA, and runs Proxmox Virtual Environment 8.2.7 with 196 GB RAM, 4 TB PCIe SSD, and an Intel i9-14900K.
+•	Virtual Machine (VM): Linux VM running Zorin OS 17.2 Core; allocated 32 GB RAM, 8 vCPUs, 512 GB virtual drive.
+•	Software: The encryption and decryption processes were implemented using Python 3.12 and the cryptography library. Appendix A contains Python code snippets for the AES and RSA encryption methods and the method used for chunking. 
+Encryption Algorithms Tested
+1.	Symmetric Encryption (AES):
+o	Algorithm: AES-256 in CBC mode with PKCS7 padding.
+2.	Asymmetric Encryption (RSA):
+o	Key Size: 2048-bit keys.
+3.	Hybrid Approach (AES + RSA):
+o	Combines AES for data encryption and RSA for secure key exchange.
+Data Preparation
+A diverse set of test files representing typical healthcare data was created:
+•	Text Files: 1 KB to 1 GB (patient records, medical reports).
+•	Image Files: DICOM format, 256 KB to 35 MB (medical imaging data from an MRI).
+•	Database Dumps: SQL files, 1 GB to 5 GB (healthcare database and backups).
+Testing Procedure
+Encryption Process
+•	Key Generation:
+o	AES: Keys are generated using a cryptographically secure random number generator.
+o	RSA: Public and private keys generated using cryptography library functions.
+•	Encryption:
+o	AES: Data encrypted in 256-bit blocks using CBC mode.
+o	RSA: Data chunked into 190-byte segments due to key size limitations.
+o	Hybrid: The AES session key is encrypted using RSA.
+•	Performance Timing: Captured using a high-precision system clock.
+•	Repetitions: Each test was repeated 50 times for statistical significance.
+Decryption Process
+•	Key Retrieval: Keys are securely retrieved from a key store.
+•	Decryption:
+o	AES: Decrypted using the same key and IV as encryption.
+o	RSA: Chunks reassembled using manifest data.
+o	Hybrid: AES key decrypted using RSA, then data decrypted using AES.
+•	Integrity Verification: Performed on decrypted data.
+•	Timing: Captured for the complete decryption process.
+Performance Metrics Collected
+•	Encryption/Decryption Speed: Measured in MB/s.
+•	CPU Utilization: Tracked at 100 ms intervals.
+•	Memory Usage: Monitored for peak and average consumption.
+•	Storage Overhead: Calculated based on ciphertext size.
+•	Network Latency: Measured for cloud operations.
+Testing Environment Controls
+•	System State: Verified idle state before each test.
+•	Background Processes: Minimized to reduce interference.
+•	Temperature: Maintained below 75°C.
+•	Network Bandwidth: Verified at >1 Gbps.
+•	Storage Capacity: Drives maintained below 80% capacity.
+Cloud Storage Simulation
+ 	A mock cloud environment was set up on the remote server using secure file transfer protocols (SFTP) to simulate data movement to and from cloud storage.
+Comparative Analysis
+Encryption methods were compared based on the following:
+•	Security Strength: Assessed through key size and algorithm complexity.
+•	Speed: Measured in MB/s for both encryption and decryption.
+•	Efficiency: Evaluated through CPU/memory usage and ciphertext size.
+•	Ease of Implementation: Considered based on complexity and resource requirements.
+Security Assessment
+Simulated common attack vectors:
+•	Brute-Force Attacks: Tested the time required to attempt all possible keys.
+•	Known Plaintext Attacks: Analyzed susceptibility based on algorithm characteristics.
+Limitations and Assumptions
+•	Controlled Environment: This may not fully represent real-world complexities.
+•	Ethical Constraints: Limited testing against sophisticated attack vectors.
+•	Network Conditions: Assumed consistent network performance.

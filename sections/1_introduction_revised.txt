@@ -1,0 +1,17 @@
+Encryption Methods for Cloud Storage Security in Healthcare: A Comparative Analysis
+
+Introduction
+
+The healthcare industry's digital transformation has led to widespread adoption of cloud storage solutions for managing sensitive patient data. According to the U.S. Department of Health and Human Services, healthcare data breaches affected over 87 million records in 2023, with 72% of incidents involving cloud storage vulnerabilities (HHS, 2023). This alarming trend underscores the critical need for robust cybersecurity measures, particularly in maintaining the confidentiality and integrity of protected health information (PHI) both at rest and in transit.
+
+This research conducts a comparative analysis of three primary encryption approaches for securing healthcare cloud storage: symmetric encryption (Advanced Encryption Standard - AES), asymmetric encryption (Rivest-Shamir-Adleman - RSA), and a hybrid methodology combining both approaches. The investigation focuses on identifying the optimal balance between security robustness, operational efficiency, and implementation practicality within healthcare environments.
+
+The significance of this research lies in the healthcare sector's unique requirements for data protection. Healthcare organizations must comply with stringent regulations such as HIPAA while maintaining rapid access to patient information for critical care decisions. A data breach in healthcare can have severe consequences, including substantial financial penalties (averaging $9.4 million per incident in 2023), compromised patient privacy, and potential impacts on patient care quality (IBM Security, 2023).
+
+Research Question:
+Which encryption method—symmetric encryption (AES), asymmetric encryption (RSA), or a hybrid approach—offers the best security, speed, and efficiency for healthcare cloud storage?
+
+Proposition:
+Among the three encryption methodologies examined, this study proposes that the hybrid approach will prove optimal for healthcare cloud storage implementations. This hypothesis is based on preliminary evidence suggesting that hybrid encryption can provide enhanced security through RSA's robust key exchange while maintaining AES's efficient data processing capabilities—a crucial combination for healthcare's high-volume, security-sensitive data environment.
+
+The subsequent sections present a comprehensive literature review examining current encryption technologies in healthcare, followed by a detailed methodology for comparative testing. The research employs rigorous performance metrics and security assessments to evaluate each encryption method within a simulated healthcare environment, ultimately providing evidence-based recommendations for healthcare organizations' cloud security strategies.

@@ -1,0 +1,201 @@
+Methods
+
+The methodology for this study is designed to comprehensively evaluate encryption methods for healthcare cloud storage, with particular attention to the security challenges identified in recent healthcare data breaches affecting over 172 million individuals in 2024. This section details the research environment, testing procedures, and evaluation criteria used to assess the effectiveness of different encryption approaches.
+
+Research Environment and Setup
+
+The testing environment was designed to simulate real-world healthcare infrastructure while maintaining controlled conditions for accurate measurement:
+
+Hardware Infrastructure:
+• Local Development Environment:
+  - 2021 MacBook Pro with M1 chip
+  - 32 GB RAM
+  - 1 TB SSD
+  - Operating System: macOS Sonoma 14.2.1
+
+• Production Testing Environment:
+  - Remote Server accessed via Twingate Zero Trust Network Access (ZTNA)
+  - Proxmox Virtual Environment 8.2.7
+  - Intel i9-14900K processor
+  - 196 GB RAM
+  - 4 TB PCIe Gen 4 NVMe SSD
+  - Network: 10 Gbps dedicated connection
+
+• Virtual Machine Configuration:
+  - Operating System: Zorin OS 17.2 Core (chosen for HIPAA compliance capabilities)
+  - Resources: 32 GB RAM, 8 vCPUs
+  - Storage: 512 GB virtual drive with encryption at rest
+  - Network: Isolated VLAN with dedicated firewall rules
+
+Software Stack:
+• Development Tools:
+  - Python 3.12 with cryptography library 41.0.7
+  - OpenSSL 3.2.0 for cryptographic operations
+  - Custom testing framework (detailed in Appendix A)
+
+• Monitoring Tools:
+  - Prometheus for metrics collection
+  - Grafana for real-time performance visualization
+  - Custom logging framework for security event tracking
+
+Encryption Methods Under Test
+
+1. Symmetric Encryption (AES):
+   • Algorithm: AES-256 in CBC mode with PKCS7 padding
+   • Key Management: Secure key generation using NIST-approved methods
+   • Implementation: Hardware-accelerated AES-NI when available
+
+2. Asymmetric Encryption (RSA):
+   • Key Size: 2048-bit keys (with additional testing of 3072-bit keys for future-proofing)
+   • Key Generation: Using OpenSSL with secure prime generation
+   • Implementation: Modified for quantum-resistant considerations
+
+3. Hybrid Encryption (AES + RSA):
+   • Combines AES-256 for data encryption with RSA for key exchange
+   • Session key management using industry-standard protocols
+   • Implementation includes perfect forward secrecy
+
+4. Additional Testing (Based on Literature Review):
+   • Homomorphic encryption for specific healthcare analytics scenarios
+   • Post-quantum cryptography evaluation using test implementations
+
+Data Preparation and Testing Methodology
+
+Healthcare-Specific Test Data:
+• Structured Clinical Data:
+  - Patient records (1 KB - 1 MB)
+  - Clinical notes and reports (5 MB - 50 MB)
+  - Medication records and prescriptions (1 KB - 500 KB)
+
+• Medical Imaging Data:
+  - DICOM files (256 KB - 35 MB)
+  - High-resolution pathology images (50 MB - 500 MB)
+  - Radiology sequences (1 GB - 5 GB)
+
+• Administrative Data:
+  - Healthcare database dumps (1 GB - 5 GB)
+  - Insurance claims data (10 MB - 1 GB)
+  - Audit logs and access records (5 MB - 100 MB)
+
+Testing Procedures
+
+Encryption Process:
+1. Key Generation and Management:
+   • Cryptographically secure random number generation
+   • Key derivation using PBKDF2 with healthcare-specific salt parameters
+   • Secure key storage with hardware security module (HSM) integration
+
+2. Data Processing:
+   • Pre-encryption data validation and integrity checks
+   • Chunking of large files with secure manifest generation
+   • Parallel processing implementation for large datasets
+
+3. Performance Measurement:
+   • High-precision timing using system monotonic clock
+   • 50 iterations per test case for statistical significance
+   • Standard deviation calculation for performance metrics
+
+Decryption Process:
+1. Key Retrieval:
+   • Secure key retrieval from HSM
+   • Key validity verification
+   • Access control validation
+
+2. Data Recovery:
+   • Chunk reassembly using secure manifests
+   • Integrity verification using SHA-256 hashes
+   • Error handling and recovery procedures
+
+3. Verification:
+   • Data integrity validation
+   • Format-specific verification for medical images
+   • Audit log generation for compliance
+
+Performance Metrics Collection
+
+Primary Metrics:
+• Processing Speed:
+  - Encryption/decryption throughput (MB/s)
+  - Key generation time
+  - End-to-end processing time
+
+• Resource Utilization:
+  - CPU usage (sampled at 100ms intervals)
+  - Memory consumption (peak and average)
+  - Storage overhead ratio
+  - Network bandwidth utilization
+
+• Healthcare-Specific Metrics:
+  - HIPAA compliance verification time
+  - Access control overhead
+  - Audit log generation impact
+
+Environmental Controls
+
+System State Management:
+• Baseline Performance:
+  - System idle state verification
+  - Background process monitoring
+  - Temperature maintenance below 75°C
+
+• Resource Availability:
+  - Network bandwidth verification (>1 Gbps)
+  - Storage utilization monitoring (<80% capacity)
+  - Memory availability checks
+
+Cloud Storage Simulation
+
+Environment:
+• Mock Cloud Infrastructure:
+  - Dedicated SFTP server with encryption support
+  - Multiple geographic locations for latency testing
+  - Simulated multi-tenant environment
+
+• Network Conditions:
+  - Variable bandwidth testing (100 Mbps - 10 Gbps)
+  - Induced latency scenarios (0-500ms)
+  - Packet loss simulation (0-5%)
+
+Comparative Analysis Framework
+
+Security Assessment:
+1. Cryptographic Strength:
+   • Key size effectiveness evaluation
+   • Algorithm complexity analysis
+   • Known vulnerability testing
+
+2. Attack Resistance:
+   • Simulated brute-force attempts
+   • Known plaintext attack analysis
+   • Side-channel attack vulnerability assessment
+   • Quantum computing threat modeling
+
+3. Healthcare Compliance:
+   • HIPAA Security Rule alignment
+   • Data breach risk assessment
+   • Recovery capability evaluation
+
+Efficiency Evaluation:
+1. Performance Metrics:
+   • Speed vs. security trade-off analysis
+   • Resource utilization optimization
+   • Scalability assessment
+
+2. Implementation Considerations:
+   • Deployment complexity analysis
+   • Maintenance requirement assessment
+   • Integration capability evaluation
+
+Limitations and Assumptions
+
+Technical Constraints:
+• Testing environment limitations
+• Network condition variations
+• Hardware-specific performance factors
+
+Methodological Limitations:
+• Ethical constraints on attack testing
+• Simplified cloud environment simulation
+• Limited scope of quantum computing simulation
+
+The methodology described above is designed to provide a comprehensive evaluation of encryption methods specifically within the healthcare context, addressing the unique challenges and requirements of medical data security while maintaining operational efficiency. The results from this testing framework will directly inform the selection of optimal encryption strategies for healthcare cloud storage implementations.

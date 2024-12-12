@@ -1,0 +1,20 @@
+Literature Review
+
+The increasing digitization of healthcare records and the recent surge in cyber threats necessitate a thorough understanding of encryption methods in healthcare cloud storage. With healthcare data breaches affecting 172 million individuals in 2024 (HHS, 2024), the industry faces unique challenges in balancing security requirements with operational efficiency.
+
+Symmetric Encryption (AES):
+Symmetric encryption uses a single key for both encryption and decryption, making it particularly efficient for large-scale data operations. Arora and Parashar (2013) provide a foundational overview of encryption algorithms in cloud computing, highlighting AES's efficiency in processing large datasets—a crucial consideration for medical imaging storage and EHR systems. Wang et al. (2024) demonstrate AES's continued relevance in modern healthcare applications, particularly in secure similarity retrieval for patient data matching and medical image processing, though they note potential vulnerabilities in key distribution across large healthcare networks.
+
+Asymmetric Encryption (RSA):
+Asymmetric encryption addresses key distribution challenges through public-private key pairs. Salami et al. (2023) provide a comprehensive review of RSA implementation in healthcare environments, emphasizing its strength in securing communication between different healthcare facilities. Their analysis reveals that while RSA excels in secure key exchange and digital signatures—essential for HIPAA compliance—its computational demands can impact performance when processing large medical imaging files or high-volume EHR transactions.
+
+Hybrid Encryption:
+The hybrid approach combines AES's processing efficiency with RSA's secure key exchange capabilities. Recent implementations in healthcare settings demonstrate its effectiveness in maintaining HIPAA compliance while supporting high-volume data operations. This approach particularly benefits multi-facility healthcare networks, where secure key exchange and efficient data processing are equally critical. The method's adaptability to various healthcare data types—from text-based patient records to large imaging files—makes it particularly relevant for modern healthcare infrastructure.
+
+Emerging Technologies:
+Kiesel et al. (2023) explore homomorphic encryption's potential in secure data processing, with implications for healthcare analytics and multi-party research collaboration. While their work focuses on manufacturing, their findings on processing encrypted data without decryption have significant applications in healthcare, particularly for maintaining patient privacy during data analysis. The emergence of quantum-resistant algorithms also presents new considerations for long-term healthcare data security, as medical records require protection well into the future.
+
+Research Gap:
+While individual encryption methods have been studied extensively, comprehensive comparisons within healthcare contexts remain limited. Current literature lacks quantitative analysis of these methods' performance under healthcare-specific workloads, particularly considering emerging threats and compliance requirements. This research addresses this gap by providing empirical comparisons of encryption methods in simulated healthcare environments, considering both security requirements and operational constraints.
+
+The literature reveals that while each encryption method offers distinct advantages, healthcare organizations require solutions that balance security, efficiency, and compliance. The subsequent methodology section builds on these findings to evaluate these methods under realistic healthcare conditions.

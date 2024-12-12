@@ -1,0 +1,10 @@
+Conclusion
+ 	The hybrid encryption method combining AES and RSA is optimal for securing healthcare cloud storage. It effectively balances the need for high security with performance and resource efficiency, addressing the unique challenges of protecting sensitive patient data in cloud environments.
+Recommendations for Healthcare Organizations:
+•	Implement Hybrid Encryption: Adopt the AES + RSA approach for cloud storage security.
+•	Infrastructure Assessment: Ensure systems can handle the moderate resource demands.
+•	Regular Security Audits: Continuously monitor and update encryption practices.
+
+Future research opportunities in encryption include examining performance across various network conditions to understand how network variability impacts effectiveness. Investigating emerging technologies such as Elliptic Curve Cryptography (ECC) can provide insights into advanced encryption methods. It is essential to evaluate how advancements in quantum computing may influence encryption security, as this area is rapidly evolving. Developing systems that intelligently select encryption methods based on data characteristics will enhance automated encryption selection. Finally, analyzing the effects of utilizing specialized hardware can significantly improve encryption performance.
+
+

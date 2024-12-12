@@ -1,0 +1,14 @@
+Title: Encryption Methods for Cloud Storage Security in Healthcare: A Comparative Analysis
+
+Introduction
+The healthcare industry increasingly adopts cloud storage solutions to manage sensitive patient data. This shift presents significant cybersecurity challenges, particularly in maintaining the confidentiality and integrity of information at rest and in motion. This research aims to investigate and compare different encryption methods—symmetric encryption (AES), asymmetric encryption (RSA), and a hybrid approach combining both—to identify the optimal balance of security, speed, and efficiency for cloud storage in the healthcare sector. 
+
+AES (Advanced Encryption Standard) is a symmetric encryption algorithm that uses a single key for encryption and decryption. It is known for its speed and robustness, which makes it ideal for large-scale data encryption. On the other hand, RSA (Rivest–Shamir–Adleman) is an asymmetric encryption algorithm that uses a pair of public and private keys, excelling in secure key exchange but with higher computational demands. End-to-end encryption combines these principles, ensuring that data is encrypted on the sender's device and remains safe until decrypted on the recipient's device, offering unparalleled privacy and security against potential intermediaries.
+
+Healthcare data is highly critical, and data breaches can have severe consequences. This study aims to identify the most effective data protection strategies to safeguard patient information while maintaining the operational efficiency of healthcare systems.
+
+Research Question:
+Which encryption method—symmetric encryption (AES), asymmetric encryption (RSA), or a hybrid approach—offers the best security, speed, and efficiency for healthcare cloud storage?
+
+Proposition:
+Among symmetric encryption (AES), asymmetric encryption (RSA), and a hybrid approach, the hybrid method will be the optimal choice for healthcare cloud storage because it offers the best combination of security strength, encryption/decryption speed, resource efficiency, and ease of implementation.
