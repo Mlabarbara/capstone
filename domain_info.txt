@@ -1,0 +1,32 @@
+
+AllowedDNSSuffixes                 : {}
+ChildDomains                       : {}
+ComputersContainer                 : CN=Computers,DC=ad,DC=sequoiataxrelief,DC=com
+DeletedObjectsContainer            : CN=Deleted Objects,DC=ad,DC=sequoiataxrelief,DC=com
+DistinguishedName                  : DC=ad,DC=sequoiataxrelief,DC=com
+DNSRoot                            : ad.sequoiataxrelief.com
+DomainControllersContainer         : OU=Domain Controllers,DC=ad,DC=sequoiataxrelief,DC=com
+DomainMode                         : Windows2016Domain
+DomainSID                          : S-1-5-21-451133223-3615939261-1876760503
+ForeignSecurityPrincipalsContainer : CN=ForeignSecurityPrincipals,DC=ad,DC=sequoiataxrelief,DC=com
+Forest                             : ad.sequoiataxrelief.com
+InfrastructureMaster               : r440-dc01.ad.sequoiataxrelief.com
+LastLogonReplicationInterval       : 
+LinkedGroupPolicyObjects           : {cn={91F3B7AB-488F-49B1-8E58-F642630DE654},cn=policies,cn=system,DC=ad,DC=sequoiataxrelief,DC=com, cn={3D656551-14EB-4BE5-B81E-8EC77E6FE170},cn=policies,cn=system,DC=ad,DC=sequoiataxrelief,DC=com, cn={71D697F3-11CA-4290-9BE8-AFCE2425E021},cn=policies,cn=system,DC=ad,DC=sequoiataxrelief,DC=com, CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=ad,DC=sequoiataxrelief,DC=com}
+LostAndFoundContainer              : CN=LostAndFound,DC=ad,DC=sequoiataxrelief,DC=com
+ManagedBy                          : 
+Name                               : ad
+NetBIOSName                        : STR
+ObjectClass                        : domainDNS
+ObjectGUID                         : babfac16-d9f1-45a3-bcbb-2b201a8571bd
+ParentDomain                       : 
+PDCEmulator                        : r440-dc01.ad.sequoiataxrelief.com
+PublicKeyRequiredPasswordRolling   : False
+QuotasContainer                    : CN=NTDS Quotas,DC=ad,DC=sequoiataxrelief,DC=com
+ReadOnlyReplicaDirectoryServers    : {}
+ReplicaDirectoryServers            : {r440-dc01.ad.sequoiataxrelief.com, r630-dc01.ad.sequoiataxrelief.com}
+RIDMaster                          : r440-dc01.ad.sequoiataxrelief.com
+SubordinateReferences              : {DC=DomainDnsZones,DC=ad,DC=sequoiataxrelief,DC=com, DC=ForestDnsZones,DC=ad,DC=sequoiataxrelief,DC=com, CN=Configuration,DC=ad,DC=sequoiataxrelief,DC=com}
+SystemsContainer                   : CN=System,DC=ad,DC=sequoiataxrelief,DC=com
+UsersContainer                     : CN=Users,DC=ad,DC=sequoiataxrelief,DC=com
+

@@ -1,0 +1,12 @@
+
+ZoneName                            ZoneType        IsAutoCreated   IsDsIntegrated  IsReverseLookupZone  IsSigned
+--------                            --------        -------------   --------------  -------------------  --------
+_msdcs.ad.sequoiataxrelief.com      Primary         False           True            False                False
+0.168.192.in-addr.arpa              Primary         False           True            True                 False
+0.in-addr.arpa                      Primary         True            False           True                 False
+127.in-addr.arpa                    Primary         True            False           True                 False
+255.in-addr.arpa                    Primary         True            False           True                 False
+ad.sequoiataxrelief.com             Primary         False           True            False                False
+str.io                              Primary         False           True            False                False
+TrustAnchors                        Primary         False           True            False                False
+

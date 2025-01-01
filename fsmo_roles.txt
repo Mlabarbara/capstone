@@ -1,0 +1,7 @@
+Schema master               r440-dc01.ad.sequoiataxrelief.com
+Domain naming master        r440-dc01.ad.sequoiataxrelief.com
+PDC                         r440-dc01.ad.sequoiataxrelief.com
+RID pool manager            r440-dc01.ad.sequoiataxrelief.com
+Infrastructure master       r440-dc01.ad.sequoiataxrelief.com
+The command completed successfully.
+

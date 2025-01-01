@@ -1,0 +1,15 @@
+
+ApplicationPartitions : {DC=ForestDnsZones,DC=ad,DC=sequoiataxrelief,DC=com, DC=DomainDnsZones,DC=ad,DC=sequoiataxrelief,DC=com}
+CrossForestReferences : {}
+DomainNamingMaster    : r440-dc01.ad.sequoiataxrelief.com
+Domains               : {ad.sequoiataxrelief.com}
+ForestMode            : Windows2016Forest
+GlobalCatalogs        : {r440-dc01.ad.sequoiataxrelief.com, r630-dc01.ad.sequoiataxrelief.com}
+Name                  : ad.sequoiataxrelief.com
+PartitionsContainer   : CN=Partitions,CN=Configuration,DC=ad,DC=sequoiataxrelief,DC=com
+RootDomain            : ad.sequoiataxrelief.com
+SchemaMaster          : r440-dc01.ad.sequoiataxrelief.com
+Sites                 : {Default-First-Site-Name}
+SPNSuffixes           : {}
+UPNSuffixes           : {sequoiataxrelief.com}
+

@@ -1,0 +1,51 @@
+
+CompressChanges                : False
+ConsecutiveReplicationFailures : 0
+DisableScheduledSync           : False
+IgnoreChangeNotifications      : False
+IntersiteTransport             : 
+IntersiteTransportGuid         : 
+IntersiteTransportType         : IP
+LastChangeUsn                  : 3921177
+LastReplicationAttempt         : 1/1/2025 7:57:50 AM
+LastReplicationResult          : 0
+LastReplicationSuccess         : 1/1/2025 7:57:50 AM
+Partition                      : DC=ad,DC=sequoiataxrelief,DC=com
+PartitionGuid                  : babfac16-d9f1-45a3-bcbb-2b201a8571bd
+Partner                        : CN=NTDS Settings,CN=R630-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=ad,DC=sequoiataxrelief,DC=com
+PartnerAddress                 : 7241c088-30bf-47d7-b06a-a55a54239957._msdcs.ad.sequoiataxrelief.com
+PartnerGuid                    : 7241c088-30bf-47d7-b06a-a55a54239957
+PartnerInvocationId            : 429634bd-2409-4de9-823e-d7c9e71f5878
+PartnerType                    : Inbound
+ScheduledSync                  : True
+Server                         : r440-dc01.ad.sequoiataxrelief.com
+SyncOnStartup                  : True
+TwoWaySync                     : False
+UsnFilter                      : 3921177
+Writable                       : True
+
+CompressChanges                : False
+ConsecutiveReplicationFailures : 0
+DisableScheduledSync           : False
+IgnoreChangeNotifications      : False
+IntersiteTransport             : 
+IntersiteTransportGuid         : 
+IntersiteTransportType         : IP
+LastChangeUsn                  : 2391896
+LastReplicationAttempt         : 1/1/2025 7:59:17 AM
+LastReplicationResult          : 0
+LastReplicationSuccess         : 1/1/2025 7:59:17 AM
+Partition                      : DC=ad,DC=sequoiataxrelief,DC=com
+PartitionGuid                  : babfac16-d9f1-45a3-bcbb-2b201a8571bd
+Partner                        : CN=NTDS Settings,CN=R440-DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=ad,DC=sequoiataxrelief,DC=com
+PartnerAddress                 : 9ea2022d-ed81-4a13-8790-191cb69b9c1f._msdcs.ad.sequoiataxrelief.com
+PartnerGuid                    : 9ea2022d-ed81-4a13-8790-191cb69b9c1f
+PartnerInvocationId            : f832849f-8095-4ac6-880a-edd139561ff4
+PartnerType                    : Inbound
+ScheduledSync                  : True
+Server                         : r630-dc01.ad.sequoiataxrelief.com
+SyncOnStartup                  : True
+TwoWaySync                     : False
+UsnFilter                      : 2391896
+Writable                       : True
+
